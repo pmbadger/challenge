@@ -32,6 +32,8 @@ export default function User() {
             <h4>{user?.email}</h4>
             <h4>{user?.first_name}</h4>
             <h4>{user?.last_name}</h4>
+            <h4>wallet address: {user?.wallet}</h4>
+            <h4>wallet balance: {user?.balance}</h4>
             <h4>{user?.is_staff}</h4>
             <button disabled={loading} type='button' onClick={onLogout}>Logout</button>
         </div>
